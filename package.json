@@ -1,0 +1,37 @@
+{
+  "name": "caminhos-campo",
+  "version": "1.0.0",
+  "description": "* HTML5\r * CSS3\r * Sass\r * Bootstrap Grid\r * Normalize\r * Slick Slider\r * Fancy Box\r * Javascript ES6\r * Performance e Otimização\r * Gulp",
+  "main": "gulpfile.js",
+  "scripts": {
+    "gulp": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/huanchicayd/caminhos-campo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/huanchicayd/caminhos-campo/issues"
+  },
+  "homepage": "https://github.com/huanchicayd/caminhos-campo#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-babel": "^7.0.0",
+    "gulp-clean": "^0.3.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-html-replace": "^1.6.2",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-imagemin": "^3.3.0",
+    "gulp-inline-source": "^3.1.0",
+    "gulp-uglify": "^3.0.0",
+    "gulp-useref": "^3.1.3",
+    "imagemin-jpeg-recompress": "^5.1.0"
+  }
+}

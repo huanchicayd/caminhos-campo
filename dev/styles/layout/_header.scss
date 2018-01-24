@@ -1,0 +1,18 @@
+.header {
+    height: 700px;
+    background: #efefef;
+    border: 1px solid red;
+
+    &__chamada-wrap {
+        margin: 0 auto;
+        max-width: 900px;
+    }
+
+    &__chamada-title {
+        text-align: center;
+    }
+
+    &__chamada-button {
+        margin: auto;
+    }
+}
