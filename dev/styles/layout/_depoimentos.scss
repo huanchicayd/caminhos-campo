@@ -1,0 +1,25 @@
+.depoimentos {
+    &__slider {
+        &__item {
+            display: flex;
+            justify-content: space-between;
+
+            &--flex {
+                width: 48%;
+                display: flex;
+                justify-content: space-between;
+            }
+
+            &--image {
+                width: 250px;
+                height: 250px;
+                //border: 1px solid red;
+            }
+
+            &--text {
+                width: calc(100% - 250px);
+                padding-left: 25px;
+            }
+        }
+    }
+}

@@ -1,0 +1,23 @@
+.cestas {
+    &__content {
+        h3 {
+            @include font-size(24);
+            margin-bottom: 15px;
+        }
+
+        &__button-wrap {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 25px;
+        }
+
+        &__button {
+            width: 48%;
+            margin: 0;
+        }
+    }
+}
+
+.cesta-image {
+    margin-bottom: 50px;
+}

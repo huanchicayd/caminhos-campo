@@ -1,23 +1,139 @@
 * {
     margin: 0;
     padding: 0;
+    outline: 0;
     list-style: none;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .004);
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+    -moz-osx-font-smoothing: grayscale !important
+}
+
+html {
+    font-size: 10px;
+    height: 100%;
+}
+
+body {
+    font-family: $text-regular;
+    overflow-x: hidden;
+    height: 100%;
+    color: $color-five;
+}
+
+p {
+    @include font-size(18);
+    line-height: 30px;
+}
+
+strong {
+    font-weight: unset;
+    font-family: $text-bold;
+}
+
+h1, h2, h3 {
+    font-weight: unset;
 }
 
 h2 {
-    color: blue;
+    color: $color-three;
     text-align: center;
+    font-family: $text-bold;
+    text-transform: uppercase;
+    @include font-size(40);
+    position: relative;
+    display: inline-block;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 50px;
+
+    &:before,
+    &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 50%;
+        width: 250px;
+        height: 3px;
+        background: $color-three;
+    }
+
+    &:before {
+        left: -270px;
+    }
+
+    &:after {
+        right: -270px;
+    }
+}
+
+img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+h3 {
+    @include font-size(20);
+    text-transform: uppercase;
+    font-family: $text-bold;
+    color: $color-four;
+    font-weight: unset;
+}
+
+a {
+    text-decoration: none;
 }
 
 section {
-    margin: 25px;
+    margin-bottom: 150px;
 }
 
 input,
 textarea {
     display: block;
     width: 100%;
-    border: 1px solid black;
+    border: 1px solid $color-two;
     resize: none;
     outline: none;
+}
+
+input {
+    height: 40px;
+}
+
+.btn {
+    padding: 10px 50px;
+    background: transparent;
+    border: 2px solid #fff;
+    text-align: center;
+    text-transform: uppercase;
+    //ont-family: $text-bold;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+}
+
+.btn-primary {
+    border: 2px solid $color-four;
+    color: $color-four;
+    font-family: $text-bold;
+    @include font-size(14);
+    transition: .5s;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    &:hover {
+        background: $color-four;
+        color: $color-one;
+    }
+}
+
+.cesta-image {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.debug {
+    border: 1px solid red;
 }

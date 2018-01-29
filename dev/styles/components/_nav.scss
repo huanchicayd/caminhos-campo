@@ -1,8 +1,50 @@
 .nav {
-    border: 1px solid red;
+    position: relative;
+    //max-width: 1200px;
+    //left: 50%;
+    //transform: translatey(25px);
+    padding-top: 25px;
+    padding-right: 60px;
+    padding-left: 60px;
+    //border: 1px solid red;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
 
     &__list {
         display: flex;
         justify-content: space-between;
+        position: relative;
+
+        li {
+            position: relative;
+
+            &:before,
+            &:after {
+                content: '';
+                display: block;
+                position: absolute;
+                top: 50%;
+                width: 30px;
+                height: 2px;
+                background: #fff;
+                transform: translateY(-50%);
+                box-shadow: 2px 2px 3px rgba(0, 0, 0, .3);
+            }
+
+            &:before {
+                left: -55px;
+            }
+
+            &:after {
+                right: -55px;
+            }
+        }
+
+
+        a {
+            @include font-size(22);
+            color: $color-one;
+            text-transform: uppercase;
+            //font-family: $text-bold;
+        }
     }
 }

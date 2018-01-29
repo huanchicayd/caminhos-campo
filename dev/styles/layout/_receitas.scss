@@ -1,0 +1,18 @@
+.receitas {
+    &__content {
+        h2 {
+            &:before,
+            &:after {
+                width: 100px;
+            }
+
+            &:before {
+                left: -110px;
+            }
+
+            &:after {
+                right: -110px;
+            }
+        }
+    }
+}

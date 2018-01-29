@@ -1,0 +1,23 @@
+//Font-size to REM
+@mixin font-size($sizeValue: 1.6) {
+    font-size: ($sizeValue) + px;
+    font-size: ($sizeValue/10) + rem;
+}
+
+//Form placeholder prefixer
+@mixin placeholder {
+    &::-webkit-input-placeholder {
+        @content;
+    }
+    &:-moz-placeholder {
+        /* Firefox 18- */
+        @content;
+    }
+    &::-moz-placeholder {
+        /* Firefox 19+ */
+        @content;
+    }
+    &:-ms-input-placeholder {
+        @content;
+    }
+}
